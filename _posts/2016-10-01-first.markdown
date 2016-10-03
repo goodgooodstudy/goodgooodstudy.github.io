@@ -1,0 +1,21 @@
+---
+layout:     post
+title:      "Welcome to Chengyang Blog"
+subtitle:   " \"Hello World, Hello Blog\""
+date:       2016-10-02 11:21:00
+author:     "Chengyang"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - 生活
+---
+
+> “Yeah It's on. ”
+
+
+## 前言
+
+Chengyang 的 Blog 就这么开通了。
+
+[跳过废话，直接看技术实现 ](#build)
+
+好好学习 天天向上
