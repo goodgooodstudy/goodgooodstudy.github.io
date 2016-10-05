@@ -1,0 +1,32 @@
+---
+layout:     post
+title:      "Welcome to Chengyang Blog"
+subtitle:   " \"Hello World, Hello Blog\""
+date:       2016-10-02 12:00:00
+author:     "Chengyang"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - 生活
+---
+
+> “Yeah It's on. ”
+
+
+## 前言
+
+Chengyang 的 Blog 就这么开通了。说点啥呢，天气越来越冷了，冻死宝宝了。。。
+
+**markdown**也是要学习一个
+
+---
+
+ `print "hello word"`
+
+ * 三个贡献
+ * 闷声发大财
+   * hahhaha
+ * 你问我资词不资词
+
+ > "这个是什么，有点高级"
+
+## 结束语
