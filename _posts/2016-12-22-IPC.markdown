@@ -1,0 +1,61 @@
+---
+layout:     post
+title:      "inter-process-communication"
+subtitle:   "面试题目"
+date:       2015-04-14
+author:     "Chengyang"
+header-img: "img/post-bg-unix-linux.jpg"
+tags:
+    - OS
+    - Unix
+    - Linux
+---
+IPC interprocess-communication
+
+1. Signals
+	a. Keyboard interrupt kill SIGHUP ….
+	b.  A signal is an asynchronous notification sent to a process or to a specific thread within the same process in order to notify it of an event that occurred
+	c. When a signal is sent, the operating system interrupts the target process' normal flow of execution to deliver the signal. Execution can be interrupted during any non-atomic instruction. If the process has previously registered a signal handler, that routine is executed. Otherwise, the default signal handler is executed.
+
+2. Pipes
+	a. Ls | pr | lpr (redirection)
+	b. In Unix-like computer operating systems, a pipeline is a sequence of processes chained together by their standard streams, so that the output of each process (stdout) feeds directly as input (stdin) to the next one.
+	c. In most Unix-like systems, all processes of a pipeline are started at the same time, with their streams appropriately connected, and managed by the scheduler together with all other processes running on the machine. An important aspect of this, setting Unix pipes apart from other pipe implementations, is the concept of buffering: for example a sending program may produce 5000 bytes per second, and a receiving program may only be able to accept 100 bytes per second, but no data is lost. Instead, the output of the sending program is held in the buffer. When the receiving program is ready to read data, then next program in the pipeline reads from the buffer. In Linux, the size of the buffer is 65536 bytes (64KB). An open source third-party filter called bfr is available to provide larger buffers if required.
+	d. 
+```
+		if (pid == 0)  
+{  
+   close(fd[1]); //close write to pipe, in child
+   dup2(fd[0], STDIN_FILENO); // Replace stdin with the read end of the pipe
+   close(fd[0]); // Don't need another copy of the pipe read end hanging about
+   execlp("cat", "cat", "names.txt", NULL);
+}
+else
+{
+   close(fd[0]); //close read from pipe, in parent
+   dup2(fd[1], STDOUT_FILENO); // Replace stdout with the write end of the pipe
+   close(fd[1]); // Don't need another copy of the pipe write end hanging about
+   execlp("sort", "sort", NULL);
+}
+```
+3. Sockets
+	a. Endpoint for communication
+	b. Concatenation of IP address and port
+	c. RPC (thrift)
+	d. A Unix domain socket or IPC socket (inter-process communication socket) is a data communications endpoint for exchanging data between processes executing on the same host operating system. Like named pipes, Unix domain sockets support transmission of a reliable stream of bytes (SOCK_STREAM, compare to TCP). In addition, they support ordered and reliable transmission of datagrams (SOCK_SEQPACKET), or unordered and unreliable transmission of datagrams (SOCK_DGRAM, compare to UDP). The Unix domain socket facility is a standard component of POSIX operating systems.
+	e. The API for Unix domain sockets is similar to that of an Internet socket, but rather than using an underlying network protocol, all communication occurs entirely within the operating system kernel. Unix domain sockets use the file system as their address name space. Processes reference Unix domain sockets as file system inodes, so two processes can communicate by opening the same socket.
+	f. In addition to sending data, processes may send file descriptors across a Unix domain socket connection using the sendmsg() and recvmsg() system calls.
+
+4. System V IPC Mechanisms
+	a. Message Queues
+		
+			In computer science, message queues and mailboxes are software-engineering components used for inter-process communication (IPC), or for inter-thread communication within the same process. They use a queue for messaging – the passing of control or of content. Group communication systems provide similar kinds of functionality.
+			ii. Message queues provide an asynchronous communications protocol, meaning that the sender and receiver of the message do not need to interact with the message queue at the same time. Messages placed onto the queue are stored until the recipient retrieves them. Message queues have implicit or explicit limits on the size of data that may be transmitted in a single message and the number of messages that may remain outstanding on the queue.
+			
+	b. Semaphores
+			
+			In computer science, a semaphore is a variable or abstract data type that is used to control access to a common resource by multiple processes in a concurrent system such as a multiprogramming operating system.
+			
+	c. Shared Memory
+			
+			a method of inter-process communication (IPC), i.e. a way of exchanging data between programs running at the same time. One process will create an area in RAM which other processes can access;
