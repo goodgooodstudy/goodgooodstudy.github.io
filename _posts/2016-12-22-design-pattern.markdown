@@ -14,8 +14,15 @@ tags:
 ## design pattern
 
 > software design pattern is a general reusable solution to a commonly occurring problem within a given context in software design.
+## Catagory
 
-It is a description or template for how to solve a problem that can be used in many different situations. 
+1. [Creational Patterns](#creational-patterns)
+2. [Structural Patterns](#structural-patterns)
+3. [Behavioral Patterns](#behavioral-patterns)
+
+
+---
+It is a description or template for how to solve a problem that can be used in many different situations.
 
 Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system. software architectural pattern for implementing user interfaces on computers.
 
