@@ -9,7 +9,7 @@ tags:
     - OS
     - Unix
     - Linux
-        
+
 ---
 
 > IPC and ITC
@@ -39,11 +39,11 @@ tags:
 	- When a signal is sent, the operating system interrupts the target process' normal flow of execution to deliver the signal. Execution can be interrupted during any non-atomic instruction. If the process has previously registered a signal handler, that routine is executed. Otherwise, the default signal handler is executed.
 
 - #### Pipes
-    - Ls | pr | lpr (redirection)
+    - Ls|pr|lpr (redirection)
 	- In Unix-like computer operating systems, a pipeline is a sequence of processes chained together by their standard streams, so that the output of each process (stdout) feeds directly as input (stdin) to the next one.
 	- In most Unix-like systems, all processes of a pipeline are started at the same time, with their streams appropriately connected, and managed by the scheduler together with all other processes running on the machine. An important aspect of this, setting Unix pipes apart from other pipe implementations, is the concept of buffering: for example a sending program may produce 5000 bytes per second, and a receiving program may only be able to accept 100 bytes per second, but no data is lost. Instead, the output of the sending program is held in the buffer. When the receiving program is ready to read data, then next program in the pipeline reads from the buffer. In Linux, the size of the buffer is 65536 bytes (64KB). An open source third-party filter called bfr is available to provide larger buffers if required.
 	- code implementations
-	
+
 ```
 		if (pid == 0)  
 {  
@@ -60,7 +60,6 @@ else
    execlp("sort", "sort", NULL);
 }
 ```
-
 - #### Sockets
 	- Endpoint for communication
 	- Concatenation of IP address and port
@@ -79,8 +78,6 @@ else
 
 	- ***Shared Memory***
 	A method of inter-process communication (IPC), i.e. a way of exchanging data between programs running at the same time. One process will create an area in RAM which other processes can access;
-	
+
 ## ITC inter-thread-communication
-shared varibales(heap) and HTTP (rpc) 
-
-
+shared varibales(heap) and HTTP (rpc)
