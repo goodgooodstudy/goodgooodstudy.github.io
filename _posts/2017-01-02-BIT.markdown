@@ -4,7 +4,7 @@ title:      "Kill time - Manipulation"
 subtitle:   "Sad"
 date:       2017-02-25
 author:     "Chengyang"
-header-img: "img/post-bg-unix-linux.jpg"
+header-img: "img/post-bg-seattle.jpg"
 tags:
     - life
 
