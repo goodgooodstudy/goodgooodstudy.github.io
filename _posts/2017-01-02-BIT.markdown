@@ -1,12 +1,12 @@
 ---
 layout:     post
-title:      "BIT-Manipulation"
+title:      "Kill time - Manipulation"
 subtitle:   "Sad"
 date:       2017-02-25
 author:     "Chengyang"
 header-img: "img/post-bg-unix-linux.jpg"
 tags:
-    - leetcode
+    - life
 
 ---
 
