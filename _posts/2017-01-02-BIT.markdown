@@ -1,0 +1,44 @@
+---
+layout:     post
+title:      "BIT-Manipulation"
+subtitle:   "Sad"
+date:       2017-02-25
+author:     "Chengyang"
+header-img: "img/post-bg-unix-linux.jpg"
+tags:
+    - leetcode
+
+---
+
+## raining
+
+Memory is a wonderful thing. If you don't have to deal with the past.
+
+有些人的相遇，要等到整个世界都消失了风景，要等到时光也停止了流淌，等到岁月的纹路爬满了沧桑的脸庞，等到本来健步如飞的身体在时光痕迹中被雕刻出佝偻的模样。而有的人的相遇，要等到就连梦想也随着一天一天瞬息游动的白云逐渐的消散，要等到草木枯荣了几十个记不得年头的季节，要等到花瓣飘飞成了融雪，要等到记忆中的那个人在漫长而遥远的道路前方逐渐改变了容颜，残留下来回忆里略带了温暖的笑容。
+
+
+The road not taken
+
+
+Two roads diverged in a yellow wood,
+And sorry I could not travel both
+And be one traveler, long I stood
+And looked down one as far as I could
+To where it bent in the undergrowth;
+
+Then took the other, as just as fair,
+And having perhaps the better claim,
+Because it was grassy and wanted wear;
+Though as for that the passing there
+Had worn them really about the same,
+
+And both that morning equally lay
+In leaves no step had trodden black.
+Oh, I kept the first for another day!
+Yet knowing how way leads on to way,
+I doubted if I should ever come back.
+
+I shall be telling this with a sigh
+Somewhere ages and ages hence:
+Two roads diverged in a wood, and I tool the one less traveled by,
+And that has made all the difference.
