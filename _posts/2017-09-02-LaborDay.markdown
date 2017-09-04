@@ -4,7 +4,7 @@ title:      "After Labor Day"
 subtitle:   "Relaxed"
 date:       2017-09-04
 author:     "Chengyang"
-header-img: "img/post-bg-pang.jpg"
+header-img: "img/post-bg-pang.png"
 tags:
     - life
 
