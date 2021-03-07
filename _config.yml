@@ -69,7 +69,7 @@ disqus_username: lcy4869-com
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "世界那么大，多玩玩看看。 "
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-lcy.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
